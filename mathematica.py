@@ -38,4 +38,3 @@ def fibbonacci_iter(n):
         fib0 = fib1
         fib1 = fib
     return fib
-    
