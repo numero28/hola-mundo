@@ -26,3 +26,15 @@ def fibbonacci_recur(n):
     if n <= 1:
         return n
     return fibbonacci_recur(n - 1) + fibbonacci_recur(n - 2)    
+
+def fibbonacci_iter(n):
+    if n < 2:
+        return n
+    fib0 = 0
+    fib1 = 1
+    fib = 0
+    for i in range(2,n + 1):
+        fib = fib0 + fib1
+        fib0 = fib1
+        fib1 = fib
+    return fib
